@@ -20,8 +20,8 @@ const gif = require("gif-search");
 
 const client = new Discord.Client({disableEveryone: true});
 
-const prefix = "1";
-var adminprefix = '1'
+const prefix = "R";
+var adminprefix = 'R'
 /////////////////////////
 ////////////////////////
 
@@ -355,7 +355,7 @@ client.on('message', message => {
     client.user.setGame(argresult, "https://www.twitch.tv/dream");
       message.channel.send(`**✅**`)
   }
-  if (message.content.startsWith(adminprefix + 'setname')) {
+  if (message.content.startsWith(adminprefix + 'Rplay')) {
   client.user.setUsername(argresult).then
       message.channel.send(`Changing The Name To ..**${argresult}** `)
 } else
